@@ -8,7 +8,16 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/misc/seymour-smith-dorothy/</loc>
+    <lastmod>2017-11-13T09:18:15-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/blog/archives/</loc>
   </url>
   
   <url>
@@ -21,13 +30,30 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/tags/dorothy/</loc>
+    <lastmod>2017-11-13T09:18:15-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/tags/hello-world/</loc>
     <lastmod>2017-11-13T09:18:15-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://purpleidea.com/misc/</loc>
+    <lastmod>2017-11-13T09:18:15-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/categories/non-technical/</loc>
+    <lastmod>2017-11-13T09:18:15-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/tags/seymour-smith/</loc>
     <lastmod>2017-11-13T09:18:15-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -52,7 +78,6 @@
   <url>
     <loc>https://purpleidea.com/</loc>
     <lastmod>2017-11-13T09:18:15-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
