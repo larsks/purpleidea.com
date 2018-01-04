@@ -58,13 +58,13 @@
 <p>In any case, let me show you the code<span style="background-color:#ffffff;"> in question. Please note the double <strong>$$</strong> for shell execution and for variable referencing. The calls to <a href="http://rsync.samba.org/">rsync</a> and <a href="http://www.gnu.org/software/coreutils/">sort</a> make me pleased.</span>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rsync -avz --include<span style="color:#f92672">=</span>*<span style="color:#66d9ef">$(</span>EXT<span style="color:#66d9ef">)</span> --exclude<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;*&#39;</span> --delete dist/ <span style="color:#66d9ef">$(</span>WWW<span style="color:#66d9ef">)</span>
 <span style="color:#75715e"># empty the file
-</span><span style="color:#75715e"></span>echo -n <span style="color:#e6db74">&#39;&#39;</span> &gt; <span style="color:#66d9ef">$(</span>METADATA<span style="color:#66d9ef">)</span>
+</span><span style="color:#75715e"></span>echo -n <span style="color:#e6db74">&#39;&#39;</span> &amp;gt; <span style="color:#66d9ef">$(</span>METADATA<span style="color:#66d9ef">)</span>
 cd <span style="color:#66d9ef">$(</span>WWW<span style="color:#66d9ef">)</span>; 
 <span style="color:#66d9ef">for</span> i in *<span style="color:#66d9ef">$(</span>EXT<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">do</span> 
 b<span style="color:#f92672">=</span>$$<span style="color:#f92672">(</span>basename $$i <span style="color:#66d9ef">$(</span>EXT<span style="color:#66d9ef">)</span><span style="color:#f92672">)</span>; 
 V<span style="color:#f92672">=</span>$$<span style="color:#f92672">(</span>echo -n $$<span style="color:#f92672">(</span>basename <span style="color:#e6db74">&#34;`echo -n &#34;</span>$$b<span style="color:#e6db74">&#34; | rev`&#34;</span> 
 <span style="color:#e6db74">&#34;`echo -n &#34;</span><span style="color:#66d9ef">$(</span>NAME<span style="color:#66d9ef">)</span>-<span style="color:#e6db74">&#34; | rev`&#34;</span><span style="color:#f92672">)</span> | rev<span style="color:#f92672">)</span>; 
-echo <span style="color:#66d9ef">$(</span>NAME<span style="color:#66d9ef">)</span> $$V $$i &gt;&gt; <span style="color:#66d9ef">$(</span>METADATA<span style="color:#66d9ef">)</span>; 
+echo <span style="color:#66d9ef">$(</span>NAME<span style="color:#66d9ef">)</span> $$V $$i &amp;gt;&amp;gt; <span style="color:#66d9ef">$(</span>METADATA<span style="color:#66d9ef">)</span>; 
 <span style="color:#66d9ef">done</span>; 
 sort -V -k <span style="color:#ae81ff">2</span> -o <span style="color:#66d9ef">$(</span>METADATA<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>METADATA<span style="color:#66d9ef">)</span>		# sort by version key</code></pre></div></p>
 
@@ -177,7 +177,7 @@ sort -V -k <span style="color:#ae81ff">2</span> -o <span style="color:#66d9ef">$
 			<hr>
 			<div class="col-sm-12">
 				<p>
-				&copy; James Shubin 2017 &middot;
+				&copy; James Shubin 2018 &middot;
 				<a href="https://purpleidea.com/">https://purpleidea.com/</a> &middot;
 				<a href="https://github.com/purpleidea/purpleidea.com/blob/master/content/blog/2010/03/31/scary-cool-bash-scripting-inside-a-makefile.md" style="color:grey">Edit this page</a>
 				</p>
