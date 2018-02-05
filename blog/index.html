@@ -57,6 +57,19 @@
 		
 			<div class="well well-sm">
 	<h4>
+		<a href="https://purpleidea.com/blog/2018/02/05/mgmt-configuration-language/">Mgmt Configuration Language</a> <small class="pull-right">Posted on Feb 5, 2018</small><br>
+		<small>Introducing the Mgmt Configuration Language</small>
+	</h4>
+	<hr>
+	<p>Mgmt has given us a lot of great features, demos, and insight into how infrastructure automation should be managed. Unfortunately it wasn&rsquo;t a complete tool yet, because it was missing a crucial piece for its completeness. That all changes today with the addition of: the language.
+
+ An ideal language allows us to express easily what is useful for the programming task, and at the same time makes it difficult to write what leads to incomprehensible or incorrect programs.</p>
+	<a class="btn btn-primary btn-xs" href="https://purpleidea.com/blog/2018/02/05/mgmt-configuration-language/">Read More <span class="fa fa-angle-double-right"></span></a>
+</div>
+
+		
+			<div class="well well-sm">
+	<h4>
 		<a href="https://purpleidea.com/blog/hello-world/">Hello World!</a> <small class="pull-right">Posted on Nov 13, 2017</small><br>
 		<small>First test of new blog</small>
 	</h4>
@@ -837,7 +850,7 @@ I think it&rsquo;s pretty ridiculous for any successor to the X230 to support le
 	</h4>
 	<hr>
 	<p>As an update to my earlier article, a friend gave me an idea of how to make my $PS1 even better&hellip; First, the relevant part of my ~/.bashrc:
-ps1_prompt() { local ps1_exit=$? if [ $ps1_exit -eq 0 ]; then #ps1_status=`echo -e &#34;\[&amp;#092;&amp;#048;33[32m\]&#34;&#39;\$&#39;&#34;\[&amp;#092;&amp;#048;33[0m\]&#34;` 	ps1_status=&#39;\$&#39; else ps1_status=`echo -e &#34;\[&amp;#092;&amp;#048;33[1;31m\]&#34;&#39;\$&#39;&#34;\[&amp;#092;&amp;#048;33[0m\]&#34;` fi ps1_git=&#39;&#39; if [ &#34;$(__git_ps1 %s)&#34; != &#39;&#39; -a &#34;$(__git_ps1 %s)&#34; != &#39;master&#39; ]; then ps1_git=&#34; (\[&amp;#092;&amp;#048;33[32m\]&#34;$(__git_ps1 &#34;%s&#34;)&#34;\[&amp;#092;&amp;#048;33[0m\])&#34; fi PS1=&#34;${debian_chroot:+($debian_chroot)}\u@\h:\[&amp;#092;&amp;#048;33[01;34m\]\w\[&amp;#092;&amp;#048;33[00m\]${ps1_git}${ps1_status}&#34; } # preserve earlier PROMPT_COMMAND entries.</p>
+ps1_prompt() { local ps1_exit=$? if [ $ps1_exit -eq 0 ]; then #ps1_status=`echo -e &#34;\[\033[32m\]&#34;&#39;\$&#39;&#34;\[\033[0m\]&#34;` 	ps1_status=&#39;\$&#39; else ps1_status=`echo -e &#34;\[\033[1;31m\]&#34;&#39;\$&#39;&#34;\[\033[0m\]&#34;` fi ps1_git=&#39;&#39; if [ &#34;$(__git_ps1 %s)&#34; != &#39;&#39; -a &#34;$(__git_ps1 %s)&#34; != &#39;master&#39; ]; then ps1_git=&#34; (\[\033[32m\]&#34;$(__git_ps1 &#34;%s&#34;)&#34;\[\033[0m\])&#34; fi PS1=&#34;${debian_chroot:+($debian_chroot)}\u@\h:\[\033[01;34m\]\w\[\033[00m\]${ps1_git}${ps1_status}&#34; } # preserve earlier PROMPT_COMMAND entries.</p>
 	<a class="btn btn-primary btn-xs" href="https://purpleidea.com/blog/2014/01/29/show-the-exit-status-in-your-ps1/">Read More <span class="fa fa-angle-double-right"></span></a>
 </div>
 
@@ -1291,19 +1304,6 @@ Usage is straightforward if you like the sensible defaults:</p>
 Why?
 Suppose you have a given infrastructure with N vaguely identical nodes.</p>
 	<a class="btn btn-primary btn-xs" href="https://purpleidea.com/blog/2013/06/04/collecting-duplicate-resources-in-puppet/">Read More <span class="fa fa-angle-double-right"></span></a>
-</div>
-
-		
-			<div class="well well-sm">
-	<h4>
-		<a href="https://purpleidea.com/blog/2013/06/04/puppet-matlab-module/">puppet matlab module</a> <small class="pull-right">Posted on Jun 4, 2013</small><br>
-		<small></small>
-	</h4>
-	<hr>
-	<p>I don&rsquo;t like repetitive work, and installing matlab counts doubly as so. Once I figured out the correct steps, I automated it with a puppet module. The downside is that the install takes a while because puppet needs to copy the iso locally. This is okay because I can be busy doing something else while this is happening.
-Using the module is quite easy:
-matlab::install { 'R2011a': iso =&gt; 'puppet://files/matlab/MATHWORKS_R2011A.iso', licensekey =&gt; '#####-#####-#####-#####', # provide your own here licensefile =&gt; 'puppet:///files/matlab/license.</p>
-	<a class="btn btn-primary btn-xs" href="https://purpleidea.com/blog/2013/06/04/puppet-matlab-module/">Read More <span class="fa fa-angle-double-right"></span></a>
 </div>
 
 		

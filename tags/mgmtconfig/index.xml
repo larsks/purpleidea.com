@@ -6,10 +6,21 @@
     <description>Recent content in Mgmtconfig on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Tue, 17 Oct 2017 21:22:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/tags/mgmtconfig/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mgmt Configuration Language</title>
+      <link>https://purpleidea.com/blog/2018/02/05/mgmt-configuration-language/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2018/02/05/mgmt-configuration-language/</guid>
+      <description>Mgmt has given us a lot of great features, demos, and insight into how infrastructure automation should be managed. Unfortunately it wasn&amp;rsquo;t a complete tool yet, because it was missing a crucial piece for its completeness. That all changes today with the addition of: the language.
+
+ An ideal language allows us to express easily what is useful for the programming task, and at the same time makes it difficult to write what leads to incomprehensible or incorrect programs.</description>
+    </item>
     
     <item>
       <title>Copyleft is Dead. Long live Copyleft!</title>

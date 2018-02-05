@@ -55,19 +55,19 @@
 	local ps1_exit<span style="color:#f92672">=</span>$?
 
 	<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $ps1_exit -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-		<span style="color:#75715e">#ps1_status=`echo -e &#34;\[&amp;#092;&amp;#048;33[32m\]&#34;&#39;\$&#39;&#34;\[&amp;#092;&amp;#048;33[0m\]&#34;`
+		<span style="color:#75715e">#ps1_status=`echo -e &#34;\[\033[32m\]&#34;&#39;\$&#39;&#34;\[\033[0m\]&#34;`
 </span><span style="color:#75715e"></span>		ps1_status<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;\$&#39;</span>
 	<span style="color:#66d9ef">else</span>
-		ps1_status<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo -e <span style="color:#e6db74">&#34;\[&amp;#092;&amp;#048;33[1;31m\]&#34;</span><span style="color:#e6db74">&#39;\$&#39;</span><span style="color:#e6db74">&#34;\[&amp;#092;&amp;#048;33[0m\]&#34;</span><span style="color:#e6db74">`</span>
+		ps1_status<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo -e <span style="color:#e6db74">&#34;\[\033[1;31m\]&#34;</span><span style="color:#e6db74">&#39;\$&#39;</span><span style="color:#e6db74">&#34;\[\033[0m\]&#34;</span><span style="color:#e6db74">`</span>
 
 	<span style="color:#66d9ef">fi</span>
 
 	ps1_git<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>
 	<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>__git_ps1 %s<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span> -a <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>__git_ps1 %s<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;master&#39;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-		ps1_git<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; (\[&amp;#092;&amp;#048;33[32m\]&#34;</span><span style="color:#66d9ef">$(</span>__git_ps1 <span style="color:#e6db74">&#34;%s&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;\[&amp;#092;&amp;#048;33[0m\])&#34;</span>
+		ps1_git<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; (\[\033[32m\]&#34;</span><span style="color:#66d9ef">$(</span>__git_ps1 <span style="color:#e6db74">&#34;%s&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;\[\033[0m\])&#34;</span>
 	<span style="color:#66d9ef">fi</span>
 
-	PS1<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>debian_chroot:+($debian_chroot)<span style="color:#e6db74">}</span><span style="color:#e6db74">\u@\h:\[&amp;#092;&amp;#048;33[01;34m\]\w\[&amp;#092;&amp;#048;33[00m\]</span><span style="color:#e6db74">${</span>ps1_git<span style="color:#e6db74">}${</span>ps1_status<span style="color:#e6db74">}</span><span style="color:#e6db74"> &#34;</span>
+	PS1<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>debian_chroot:+($debian_chroot)<span style="color:#e6db74">}</span><span style="color:#e6db74">\u@\h:\[\033[01;34m\]\w\[\033[00m\]</span><span style="color:#e6db74">${</span>ps1_git<span style="color:#e6db74">}${</span>ps1_status<span style="color:#e6db74">}</span><span style="color:#e6db74"> &#34;</span>
 <span style="color:#f92672">}</span>
 
 <span style="color:#75715e"># preserve earlier PROMPT_COMMAND entries...

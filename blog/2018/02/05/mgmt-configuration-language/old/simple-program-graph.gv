@@ -1,0 +1,47 @@
+// neato simple-program-graph.gv -Tpng > simple-program-graph.png
+digraph program {
+
+	friday [label="str(friday)"]
+	endofweek [label="var(endofweek)"]
+
+	friday -> endofweek
+
+	db [label="str(db)"]
+	installed [label="str(installed)"]
+
+	hostname [label="call:hostname"]
+	mon [label="str(mon)"]
+	eq0 [label="call:operator_eq"]
+
+	hostname -> eq0 [label="operator:lhs"]
+	mon -> eq0 [label="operator:rhs"]
+
+	db_monitoring [label="str(db-monitoring)"]
+	latest [label="str(latest)"]
+
+	config [label="str(/etc/db/config.xml)"]
+
+	day -> eq1 [label="operator:lhs"]
+	endofweek -> eq1 [label="operator:rhs"]
+
+	day [label="call:day"]
+	eq1 [label="call:operator_eq"]
+
+	if [label="if()"]
+
+	ugow [label="str(ugo-w)"]
+	ugw [label="str(ug+w)"]
+
+	eq1 -> if [label="conditional"]
+	ugow -> if [label="then"]
+	ugw -> if [label="else"]
+
+	tmpl [label="str(db/standalone.gtmpl)"]
+	template [label="call:template"]
+
+	tmpl -> template [label="arg0"]
+	hostname -> template [label="arg1"]
+
+	dbd [label="str(dbd)"]
+	running [label="str(running)"]
+}
