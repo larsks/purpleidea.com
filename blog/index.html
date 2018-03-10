@@ -57,6 +57,20 @@
 		
 			<div class="well well-sm">
 	<h4>
+		<a href="https://purpleidea.com/blog/2018/03/10/running-make-from-anywhere/">Running `make` from anywhere</a> <small class="pull-right">Posted on Mar 10, 2018</small><br>
+		<small>Run commands from your `Makefile`, even if you&#39;re nested deeply!</small>
+	</h4>
+	<hr>
+	<p>Sometimes while I&rsquo;m deep inside mgmt&rsquo;s project directory, I want to run an operation from the Makefile which lives in the root! Unfortunately, if you do so while nested, you&rsquo;ll just get:
+james@computer:~/code/mgmt/resources$ make build make: *** No rule to make target &#39;build&#39;. Stop. The Ten Minute Solution:
+I figured I&rsquo;d hack out a quick solution. What I came up with looks like this:
+#!/bin/bash # James Shubin, 2018 # run `make` in the first directory (or its parent recursively) that it works in  MF=&#39;Makefile&#39;	# looks for this file, could look for others, but that&#39;s silly CWD=$(pwd)	# starting here  while true; do if [ -e &#34;$MF&#34; ]; then make $@	# run make!</p>
+	<a class="btn btn-primary btn-xs" href="https://purpleidea.com/blog/2018/03/10/running-make-from-anywhere/">Read More <span class="fa fa-angle-double-right"></span></a>
+</div>
+
+		
+			<div class="well well-sm">
+	<h4>
 		<a href="https://purpleidea.com/blog/2018/02/05/mgmt-configuration-language/">Mgmt Configuration Language</a> <small class="pull-right">Posted on Feb 5, 2018</small><br>
 		<small>Introducing the Mgmt Configuration Language</small>
 	</h4>
@@ -1291,19 +1305,6 @@ FreeIPA is choosy about how your /etc/hosts is formatted. It requires an entry t
 	<p>In response to some discussion in the gluster community, I am releasing my puppet-lsi module. It&rsquo;s quite simple, but it is very useful for rebuilding machines. It could do a lot more, but I wanted to depend on the proprietary LSI tools as little as possible. Running megacli with puppet would be a very doable hack, but I&rsquo;m not sure enough devops out there who would use that feature.
 Usage is straightforward if you like the sensible defaults:</p>
 	<a class="btn btn-primary btn-xs" href="https://purpleidea.com/blog/2013/06/17/puppet-lsi-hardware-raid-module/">Read More <span class="fa fa-angle-double-right"></span></a>
-</div>
-
-		
-			<div class="well well-sm">
-	<h4>
-		<a href="https://purpleidea.com/blog/2013/06/04/collecting-duplicate-resources-in-puppet/">Collecting duplicate resources in puppet</a> <small class="pull-right">Posted on Jun 4, 2013</small><br>
-		<small></small>
-	</h4>
-	<hr>
-	<p>I could probably write a long design article explaining why identical duplicate resources should be allowed [1] in puppet. If puppet is going to survive in the long-term, they will have to build in this feature. In the short-term, I will have to hack around deficiency. As luck would have it, Mr. Bode has already written part one of the hack: ensure_resource.
-Why?
-Suppose you have a given infrastructure with N vaguely identical nodes.</p>
-	<a class="btn btn-primary btn-xs" href="https://purpleidea.com/blog/2013/06/04/collecting-duplicate-resources-in-puppet/">Read More <span class="fa fa-angle-double-right"></span></a>
 </div>
 
 		

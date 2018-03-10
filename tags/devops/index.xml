@@ -6,10 +6,22 @@
     <description>Recent content in Devops on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 10 Mar 2018 02:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Running `make` from anywhere</title>
+      <link>https://purpleidea.com/blog/2018/03/10/running-make-from-anywhere/</link>
+      <pubDate>Sat, 10 Mar 2018 02:00:00 -0500</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2018/03/10/running-make-from-anywhere/</guid>
+      <description>Sometimes while I&amp;rsquo;m deep inside mgmt&amp;rsquo;s project directory, I want to run an operation from the Makefile which lives in the root! Unfortunately, if you do so while nested, you&amp;rsquo;ll just get:
+james@computer:~/code/mgmt/resources$ make build make: *** No rule to make target &amp;#39;build&amp;#39;. Stop. The Ten Minute Solution:
+I figured I&amp;rsquo;d hack out a quick solution. What I came up with looks like this:
+#!/bin/bash # James Shubin, 2018 # run `make` in the first directory (or its parent recursively) that it works in  MF=&amp;#39;Makefile&amp;#39;	# looks for this file, could look for others, but that&amp;#39;s silly CWD=$(pwd)	# starting here  while true; do if [ -e &amp;#34;$MF&amp;#34; ]; then make $@	# run make!</description>
+    </item>
     
     <item>
       <title>Mgmt Configuration Language</title>
