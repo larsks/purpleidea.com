@@ -1,0 +1,36 @@
+notes from talking with keith packard at lca2018
+
+# calculate the mode line needed for 720p
+$ cvt 1280 720
+# 1280x720 59.86 Hz (CVT 0.92M9) hsync: 44.77 kHz; pclk: 74.50 MHz
+Modeline "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync
+
+# add new fake mode
+$ xrandr --newmode fake-1280x720 74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync
+
+# this will appear at the bottom of `xrandr` not associated with any panel
+
+# now add this to my laptop panel so they're associated
+$ xrandr --addmode LVDS-1 fake-1280x720
+
+# switch my panel to that new mode
+xrandr --output LVDS-1 --mode fake-1280x720
+
+# yuck, it's scaled... switch back:
+
+$ xrandr --output LVDS-1 --mode 1366x768
+
+# switch back, but letterbox it:
+
+$xrandr --output LVDS-1 --mode fake-1280x720 --set "scaling mode" Center
+
+# you can also just set this property for the session, and it will work everywhere:
+# and only LVDS (low voltage differential signaling) support this because it has the panel scaling which is done in hardware
+
+xrandr --output LVDS-1 --set "scaling mode" Center
+
+# other modes 
+xrandr --output LVDS-1 --set "scaling mode" Full | "Full aspect" | Center
+
+# get the list here:
+xrandr --prop
