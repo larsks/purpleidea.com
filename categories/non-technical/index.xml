@@ -6,10 +6,23 @@
     <description>Recent content in Non Technical on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Mon, 13 Nov 2017 09:18:15 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Apr 2018 06:27:35 -0500</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/categories/non-technical/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leaving Red Hat</title>
+      <link>https://purpleidea.com/blog/2018/04/04/leaving-redhat/</link>
+      <pubDate>Wed, 04 Apr 2018 06:27:35 -0500</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2018/04/04/leaving-redhat/</guid>
+      <description>I&amp;rsquo;ve spent about four years at Red Hat, and now it&amp;rsquo;s time to move on&amp;hellip;
+TL;DR: had to leave Red Hat and start Patreon to fund mgmt.
+What follows is a bit of historical rambling, and some forward looking statements.
+Retrospective:
+Long-time readers of my blog will know that I was very active in the puppet ecosystem for many years. I learned a lot while writing puppet code, and while building some of my outrageous puppet hacks.</description>
+    </item>
     
     <item>
       <title>Hello World!</title>
@@ -30,6 +43,17 @@ Happy Hacking, James</description>
       <description>As you may have noticed, we recently re-licensed mgmt from the AGPL (Affero General Public License) to the regular GPL. This is a post explaining the decision and which hopefully includes some insights at the intersection of technology and legal issues.
 Disclaimer:
 I am not a lawyer, and these are not necessarily the opinions of my employer. I think I&amp;rsquo;m knowledgeable in this area, but I&amp;rsquo;m happy to be corrected in the comments.</description>
+    </item>
+    
+    <item>
+      <title>Working at RedHat</title>
+      <link>https://purpleidea.com/blog/2014/04/02/working-at-redhat/</link>
+      <pubDate>Wed, 02 Apr 2014 14:27:35 +0000</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2014/04/02/working-at-redhat/</guid>
+      <description>So this happened:
+ James just James at RedHat headquarters in North Carolina wearing his new red hat.RedHat made me an offer, and I am happy to say that I have just started this week!
+I am proud to have joined a company that employs many of the worlds foremost, highly professional and clever hackers. It is indubitably the best Free Software [1] / Open Source company out there, and they ship some of the greatest and most elegant software available.</description>
     </item>
     
   </channel>

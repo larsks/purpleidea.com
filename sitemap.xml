@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://purpleidea.com/blog/2018/04/04/leaving-redhat/</loc>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/blog/2018/03/10/running-make-from-anywhere/</loc>
     <lastmod>2018-03-10T02:00:00-05:00</lastmod>
   </url>
@@ -1632,7 +1637,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/devops/</loc>
-    <lastmod>2018-03-10T02:00:00-05:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1887,7 +1892,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/fedora/</loc>
-    <lastmod>2018-03-10T02:00:00-05:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2193,7 +2198,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/gluster/</loc>
-    <lastmod>2017-10-17T21:22:05+00:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2985,7 +2990,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/mgmtconfig/</loc>
-    <lastmod>2018-02-05T00:00:00-05:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3199,7 +3204,7 @@
   
   <url>
     <loc>https://purpleidea.com/categories/non-technical/</loc>
-    <lastmod>2017-11-13T09:18:15-05:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3419,13 +3424,13 @@
   
   <url>
     <loc>https://purpleidea.com/tags/planetdevops/</loc>
-    <lastmod>2017-05-05T17:35:17+00:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://purpleidea.com/tags/planetfedora/</loc>
-    <lastmod>2018-03-10T02:00:00-05:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3443,7 +3448,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/planetpuppet/</loc>
-    <lastmod>2017-10-17T21:22:05+00:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3581,7 +3586,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/puppet/</loc>
-    <lastmod>2017-10-17T21:22:05+00:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3821,7 +3826,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/redhat/</loc>
-    <lastmod>2015-05-02T00:07:11+00:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4422,7 +4427,7 @@
   
   <url>
     <loc>https://purpleidea.com/blog/</loc>
-    <lastmod>2018-03-10T02:00:00-05:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
   </url>
   
   <url>
@@ -4743,7 +4748,7 @@
   
   <url>
     <loc>https://purpleidea.com/</loc>
-    <lastmod>2018-03-10T02:00:00-05:00</lastmod>
+    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
   </url>
   
   <url>
