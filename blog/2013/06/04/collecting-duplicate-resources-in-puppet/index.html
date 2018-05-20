@@ -113,7 +113,7 @@
 }</code></pre></div></p>
 
 <p>and on the collector:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Dhcp</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Subnet</span> <span style="color:#f92672">&lt;&lt;|</span> tag <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;dhcp&#39;</span> <span style="color:#f92672">and</span> title <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;${dhcp_zone}&#34;</span> <span style="color:#f92672">|&gt;&gt;</span> {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Dhcp</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Subnet</span> <span style="color:#f92672">&lt;&lt;|</span> tag <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;dhcp&#39;</span> <span style="color:#f92672">and</span> title <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;${dhcp_zone}&#34;</span> <span style="color:#f92672">|&gt;&amp;</span>gt; {
 }</code></pre></div></p>
 
 <p>There are a few things to notice:

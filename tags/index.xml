@@ -1103,7 +1103,7 @@
     <item>
       <title>Devops</title>
       <link>https://purpleidea.com/tags/devops/</link>
-      <pubDate>Wed, 04 Apr 2018 06:27:35 -0500</pubDate>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/devops/</guid>
       <description></description>
@@ -1481,7 +1481,7 @@
     <item>
       <title>Fedora</title>
       <link>https://purpleidea.com/tags/fedora/</link>
-      <pubDate>Wed, 04 Apr 2018 06:27:35 -0500</pubDate>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/fedora/</guid>
       <description></description>
@@ -2129,7 +2129,7 @@
     <item>
       <title>Golang</title>
       <link>https://purpleidea.com/tags/golang/</link>
-      <pubDate>Sun, 26 Feb 2017 17:02:35 +0000</pubDate>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/golang/</guid>
       <description></description>
@@ -3128,7 +3128,7 @@
     <item>
       <title>Mgmtconfig</title>
       <link>https://purpleidea.com/tags/mgmtconfig/</link>
-      <pubDate>Wed, 04 Apr 2018 06:27:35 -0500</pubDate>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/mgmtconfig/</guid>
       <description></description>
@@ -3758,7 +3758,7 @@
     <item>
       <title>Planetdevops</title>
       <link>https://purpleidea.com/tags/planetdevops/</link>
-      <pubDate>Wed, 04 Apr 2018 06:27:35 -0500</pubDate>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/planetdevops/</guid>
       <description></description>
@@ -3767,7 +3767,7 @@
     <item>
       <title>Planetfedora</title>
       <link>https://purpleidea.com/tags/planetfedora/</link>
-      <pubDate>Wed, 04 Apr 2018 06:27:35 -0500</pubDate>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/planetfedora/</guid>
       <description></description>
@@ -5039,6 +5039,15 @@
       <pubDate>Tue, 04 Nov 2014 02:23:52 +0000</pubDate>
       
       <guid>https://purpleidea.com/tags/switchd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sync</title>
+      <link>https://purpleidea.com/tags/sync/</link>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/tags/sync/</guid>
       <description></description>
     </item>
     

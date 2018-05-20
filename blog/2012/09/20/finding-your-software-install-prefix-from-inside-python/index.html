@@ -52,30 +52,30 @@
 					<p>Good python software developers tend to use <a href="http://docs.python.org/library/distutils.html">distutils</a> and include a setup.py with their code. The problem I often encounter is finding out which prefix your software has been installed in from within the python code. This might be necessary if you want to interact with some data that you&rsquo;ve installed into: $prefix/share/projectname/ Here are the various steps:</p>
 
 <p><strong>1) <span style="text-decoration:underline;">Distutils</span>:</strong>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">NAME<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;someproject&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;someproject&#39;</span>
 distutils<span style="color:#f92672">.</span>core<span style="color:#f92672">.</span>setup(
     name<span style="color:#f92672">=</span>NAME,
-    version<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;0.1&#39;</span>,
-    author<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;James Shubin&#39;</span>,
-    author_email<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;secret@purpleidea.com&#39;</span>,
-    url<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;https://purpleidea.com/&#39;</span>,
-    description<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;This is an example project&#39;</span>,
+    version<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;0.1&#39;</span>,
+    author<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;James Shubin&#39;</span>,
+    author_email<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;secret@purpleidea.com&#39;</span>,
+    url<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://purpleidea.com/&#39;</span>,
+    description<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;This is an example project&#39;</span>,
     <span style="color:#75715e"># http://pypi.python.org/pypi?%3Aaction=list_classifiers</span>
     classifiers<span style="color:#f92672">=</span>[
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;Environment :: Console&#39;</span>,
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;Intended Audience :: System Administrators&#39;</span>,
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;License :: OSI Approved :: GNU Affero General Public License v3&#39;</span>,
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;Operating System :: POSIX :: Linux&#39;</span>,
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;Programming Language :: Python&#39;</span>,
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;Topic :: Utilities&#39;</span>,
+        <span style="color:#e6db74">&#39;Environment :: Console&#39;</span>,
+        <span style="color:#e6db74">&#39;Intended Audience :: System Administrators&#39;</span>,
+        <span style="color:#e6db74">&#39;License :: OSI Approved :: GNU Affero General Public License v3&#39;</span>,
+        <span style="color:#e6db74">&#39;Operating System :: POSIX :: Linux&#39;</span>,
+        <span style="color:#e6db74">&#39;Programming Language :: Python&#39;</span>,
+        <span style="color:#e6db74">&#39;Topic :: Utilities&#39;</span>,
     ],
     packages<span style="color:#f92672">=</span>[NAME],
-    package_dir<span style="color:#f92672">=</span>{NAME: <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;src&#39;</span>},
+    package_dir<span style="color:#f92672">=</span>{NAME: <span style="color:#e6db74">&#39;src&#39;</span>},
     data_files<span style="color:#f92672">=</span>[
-        (<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;share/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> NAME, [<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;README&#39;</span>]),
-        (<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;share/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> NAME, [<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;images/something.png&#39;</span>]),
+        (<span style="color:#e6db74">&#39;share/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> NAME, [<span style="color:#e6db74">&#39;README&#39;</span>]),
+        (<span style="color:#e6db74">&#39;share/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> NAME, [<span style="color:#e6db74">&#39;images/something.png&#39;</span>]),
     ],
-    scripts<span style="color:#f92672">=</span>[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;somebin&#39;</span>],
+    scripts<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;somebin&#39;</span>],
 )</code></pre></div></p>
 
 <p><strong>2) <span style="text-decoration:underline;">Install</span>:</strong></p>
@@ -106,7 +106,7 @@ PYTHONPATH=lib/python2.7/site-packages/ ./bin/somebin
 
 <p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e"># -*- coding: utf-8 -*-</span>
-<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;Find the prefix of the current installation, and other useful variables.
+<span style="color:#e6db74">&#34;&#34;&#34;Find the prefix of the current installation, and other useful variables.
 </span><span style="color:#e6db74">
 </span><span style="color:#e6db74">Finding the prefix that your program has been installed in can be non-trivial.
 </span><span style="color:#e6db74">This simplifies the process by allowing you to import &lt;packagename&gt;.prefix and
@@ -131,14 +131,14 @@ PYTHONPATH=lib/python2.7/site-packages/ ./bin/somebin
 <span style="color:#75715e"># You should have received a copy of the GNU Affero General Public License</span>
 <span style="color:#75715e"># along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
 
-__all__ <span style="color:#f92672">=</span> (<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;prefix&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;name&#39;</span>)
+__all__ <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;prefix&#39;</span>, <span style="color:#e6db74">&#39;name&#39;</span>)
 <span style="color:#75715e">#DEBUG = False</span>
 
 <span style="color:#f92672">import</span> os
 <span style="color:#f92672">import</span> sys
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prefix</span>(join<span style="color:#f92672">=</span>None):
-    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;Returns the prefix that this code was installed into.&#34;&#34;&#34;</span>
+    <span style="color:#e6db74">&#34;&#34;&#34;Returns the prefix that this code was installed into.&#34;&#34;&#34;</span>
     <span style="color:#75715e"># constants for this execution</span>
     path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>abspath(__file__)
     <span style="color:#75715e">#if DEBUG: print &#39;path: %s&#39; % path</span>
@@ -151,9 +151,9 @@ __all__ <span style="color:#f92672">=</span> (<span style="color:#e6db74"></span
     rules <span style="color:#f92672">=</span> [
         <span style="color:#75715e"># to match: /usr/lib/python2.5/site-packages/project/prefix.py</span>
         <span style="color:#75715e"># or: /usr/local/lib/python2.6/dist-packages/project/prefix.py</span>
-        <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;lib&#39;</span>,
-        <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">==</span> (<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;python</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> sys<span style="color:#f92672">.</span>version[:<span style="color:#ae81ff">3</span>]),
-        <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">in</span> [<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;site-packages&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;dist-packages&#39;</span>],
+        <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;lib&#39;</span>,
+        <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">==</span> (<span style="color:#e6db74">&#39;python</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> sys<span style="color:#f92672">.</span>version[:<span style="color:#ae81ff">3</span>]),
+        <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;site-packages&#39;</span>, <span style="color:#e6db74">&#39;dist-packages&#39;</span>],
         <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">==</span> name,    <span style="color:#75715e"># &#39;project&#39;</span>
         <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">==</span> this,    <span style="color:#75715e"># &#39;prefix.py&#39;</span>
     ]
@@ -174,7 +174,7 @@ __all__ <span style="color:#f92672">=</span> (<span style="color:#e6db74"></span
         <span style="color:#66d9ef">return</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(path, join)    <span style="color:#75715e"># add on join if it exists!</span>
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">name</span>(pop<span style="color:#f92672">=</span>[], suffix<span style="color:#f92672">=</span>None):
-    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;Returns the name of this particular project. If pop is a list
+    <span style="color:#e6db74">&#34;&#34;&#34;Returns the name of this particular project. If pop is a list
 </span><span style="color:#e6db74">    containing more than one element, name() will remove those items
 </span><span style="color:#e6db74">    from the path tail before deciding on the project name. If there
 </span><span style="color:#e6db74">    is an element which does not exist in the path tail, then raise.
@@ -185,17 +185,17 @@ __all__ <span style="color:#f92672">=</span> (<span style="color:#e6db74"></span
         (path, tail) <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>split(path)
         <span style="color:#66d9ef">if</span> pop<span style="color:#f92672">.</span>pop() <span style="color:#f92672">!=</span> tail:
             <span style="color:#75715e">#if DEBUG: print &#39;tail: %s&#39; % tail</span>
-            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;Element doesnʼt match path tail.&#39;</span>)
+            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#39;Element doesnʼt match path tail.&#39;</span>)
 
     path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(path)
     <span style="color:#66d9ef">if</span> suffix <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None <span style="color:#f92672">and</span> path<span style="color:#f92672">.</span>endswith(suffix):
         path <span style="color:#f92672">=</span> path[<span style="color:#ae81ff">0</span>:<span style="color:#f92672">-</span>len(suffix)]
     <span style="color:#66d9ef">return</span> path
 
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;__main__&#39;</span>:
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
     join <span style="color:#f92672">=</span> None
     <span style="color:#66d9ef">if</span> len(sys<span style="color:#f92672">.</span>argv) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
-        join <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">.</span>join(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>:])
+        join <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">.</span>join(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>:])
     result <span style="color:#f92672">=</span> prefix(join)
     <span style="color:#66d9ef">if</span> result:
         <span style="color:#66d9ef">print</span> result

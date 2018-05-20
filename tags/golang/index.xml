@@ -6,10 +6,21 @@
     <description>Recent content in Golang on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Sun, 26 Feb 2017 17:02:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 May 2018 18:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A new sync primitive in golang</title>
+      <link>https://purpleidea.com/blog/2018/05/20/a-new-sync-primitive-in-golang/</link>
+      <pubDate>Sun, 20 May 2018 18:00:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2018/05/20/a-new-sync-primitive-in-golang/</guid>
+      <description>I&amp;rsquo;ve been working on lots of new stuff in mgmt and I had a synchronization problem that needed solving&amp;hellip; Long story short, I built it into a piece of re-usable functionality, exactly like you might find in the sync package. For details and examples, please continue reading&amp;hellip;
+The Problem:
+I want to multicast a signal to an arbitrary number of goroutines. As you might already know, this can already be done with a chan struct{}.</description>
+    </item>
     
     <item>
       <title>Faster golang builds</title>
