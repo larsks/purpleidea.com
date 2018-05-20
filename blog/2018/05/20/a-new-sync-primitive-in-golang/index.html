@@ -86,22 +86,18 @@ another cycle after the first <code>syn-ack</code> iteration finishes.</p>
 
 <p>Here&rsquo;s what the code looks like. It&rsquo;s surprisingly short.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">SubscribedSignal</span> <span style="color:#66d9ef">struct</span> {
-	<span style="color:#a6e22e">wg</span>    <span style="color:#f92672">*</span><span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">WaitGroup</span>
+	<span style="color:#a6e22e">wg</span>    <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">WaitGroup</span>
 	<span style="color:#a6e22e">exit</span>  <span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">struct</span>{}
-	<span style="color:#a6e22e">mutex</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">RWMutex</span>
-}
-
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewSubscribedSignal</span>() <span style="color:#f92672">*</span><span style="color:#a6e22e">SubscribedSignal</span> {
-	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">SubscribedSignal</span>{
-		<span style="color:#a6e22e">wg</span>:    <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">WaitGroup</span>{},
-		<span style="color:#a6e22e">exit</span>:  make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">struct</span>{}),
-		<span style="color:#a6e22e">mutex</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">RWMutex</span>{},
-	}
+	<span style="color:#a6e22e">mutex</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">RWMutex</span>
 }
 
 <span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">obj</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">SubscribedSignal</span>) <span style="color:#a6e22e">Subscribe</span>() (<span style="color:#f92672">&lt;-</span><span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">struct</span>{}, <span style="color:#66d9ef">func</span>()) {
 	<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">mutex</span>.<span style="color:#a6e22e">Lock</span>()
 	<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">mutex</span>.<span style="color:#a6e22e">Unlock</span>()
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">exit</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> { <span style="color:#75715e">// initialize on first use (safe b/c we use a lock)
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">exit</span> = make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">struct</span>{}) <span style="color:#75715e">// initialize
+</span><span style="color:#75715e"></span>	}
 
 	<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">wg</span>.<span style="color:#a6e22e">Add</span>(<span style="color:#ae81ff">1</span>)
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">exit</span>, <span style="color:#66d9ef">func</span>() { <span style="color:#75715e">// cancel/ack function
@@ -117,8 +113,10 @@ another cycle after the first <code>syn-ack</code> iteration finishes.</p>
 	<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">mutex</span>.<span style="color:#a6e22e">Lock</span>()
 	<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">mutex</span>.<span style="color:#a6e22e">Unlock</span>()
 
-	close(<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">exit</span>) <span style="color:#75715e">// send the close signal
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">wg</span>.<span style="color:#a6e22e">Wait</span>()   <span style="color:#75715e">// wait for everyone to ack
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">exit</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> { <span style="color:#75715e">// in case we Send before anyone runs Subscribe
+</span><span style="color:#75715e"></span>		close(<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">exit</span>) <span style="color:#75715e">// send the close signal
+</span><span style="color:#75715e"></span>	}
+	<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">wg</span>.<span style="color:#a6e22e">Wait</span>() <span style="color:#75715e">// wait for everyone to ack
 </span><span style="color:#75715e"></span>
 	<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">exit</span> = make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">struct</span>{}) <span style="color:#75715e">// reset
 </span><span style="color:#75715e"></span>
@@ -129,7 +127,7 @@ another cycle after the first <code>syn-ack</code> iteration finishes.</p>
 <br /><span style="text-decoration:underline; font-weight: bold;">Explanation</span>:<br /><br />
 
 
-<p>You start by creating a single <code>*SubscribedSignal</code> with <code>NewSubscribedSignal()</code>.
+<p>You start by creating the zero value of the struct with <code>&amp;SubscribedSignal{}</code>.
 You can then <code>Subscribe</code> to it any number of times. When <code>Subscribe</code> returns,
 you can guarantee that you are now successfully subscribed. It will return two
 values:</p>
@@ -171,8 +169,8 @@ was necessary.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">ExampleSubscribeSync</span>() {
 	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;hello&#34;</span>)
 
-	<span style="color:#a6e22e">x</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">NewSubscribedSignal</span>()
-	<span style="color:#a6e22e">wg</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">WaitGroup</span>{}
+	<span style="color:#a6e22e">x</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">SubscribedSignal</span>{} <span style="color:#75715e">// pointer b/c can&#39;t be copied after first use
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">wg</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">WaitGroup</span>{}
 	<span style="color:#a6e22e">ready</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">WaitGroup</span>{}
 
 	<span style="color:#75715e">// unit1
@@ -272,7 +270,7 @@ primitive.</p>
 		<div class="col-md-3">
 			<div class="well well-sm"> 
 				<h4>May 20, 2018<br>
-				<small>780 words</small></h4>
+				<small>815 words</small></h4>
 				<hr>
 				<strong>Categories</strong>
 				<ul class="list-unstyled">
