@@ -91,7 +91,7 @@ As you can see, we cause the run to happen in the silent &ldquo;unless&rdquo; pa
 <p>If you want to do something more complicated using this technique, you might want to write something like this:</p>
 
 <p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">$max <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>
-exec { <span style="color:#e6db74">&#34;/bin/echo this is run #: ${::common_counter_simple}&#34;</span>:
+<span style="color:#f92672"></span>exec { <span style="color:#e6db74">&#34;/bin/echo this is run #: ${::common_counter_simple}&#34;</span>:
         logoutput <span style="color:#f92672">=&gt;</span> on_failure,
         onlyif <span style="color:#f92672">=&gt;</span> <span style="color:#f92672">[</span>
                 <span style="color:#e6db74">&#34;/usr/bin/test ${::common_counter_simple} -lt ${max}&#34;</span>,

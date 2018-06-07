@@ -309,17 +309,17 @@ james@computer:~/code/oh-my-vagrant$
 <span style="color:#f92672">import</span> sys
 <span style="color:#f92672">import</span> copr
 
-COPR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;oh-my-vagrant&#39;</span>
+COPR <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;oh-my-vagrant&#39;</span>
 <span style="color:#66d9ef">if</span> len(sys<span style="color:#f92672">.</span>argv) <span style="color:#f92672">!=</span> <span style="color:#ae81ff">2</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Usage: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> &lt;srpm url&gt;&#34;</span> <span style="color:#f92672">%</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">0</span>])
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;Usage: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> &lt;srpm url&gt;&#34;</span> <span style="color:#f92672">%</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">0</span>])
     sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">1</span>)
 
 url <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
 
-client <span style="color:#f92672">=</span> copr<span style="color:#f92672">.</span>CoprClient<span style="color:#f92672">.</span>create_from_file_config(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#34;~/.config/copr&#34;</span>))
+client <span style="color:#f92672">=</span> copr<span style="color:#f92672">.</span>CoprClient<span style="color:#f92672">.</span>create_from_file_config(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;~/.config/copr&#34;</span>))
 
 result <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>create_new_build(COPR, [url])
-<span style="color:#66d9ef">if</span> result<span style="color:#f92672">.</span>output <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;ok&#34;</span>:
+<span style="color:#66d9ef">if</span> result<span style="color:#f92672">.</span>output <span style="color:#f92672">!=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;ok&#34;</span>:
     <span style="color:#66d9ef">print</span>(result<span style="color:#f92672">.</span>error)
     sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">1</span>)
 <span style="color:#66d9ef">print</span>(result<span style="color:#f92672">.</span>message)</code></pre></div>
