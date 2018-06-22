@@ -6,10 +6,22 @@
     <description>Recent content in The Technical Blog of James on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Sun, 20 May 2018 18:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jun 2018 13:50:00 -0400</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Breaking out of the Slack walled garden</title>
+      <link>https://purpleidea.com/blog/2018/06/18/breaking-out-of-the-slack-walled-garden/</link>
+      <pubDate>Fri, 22 Jun 2018 13:50:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2018/06/18/breaking-out-of-the-slack-walled-garden/</guid>
+      <description>I&amp;rsquo;m old school cool. Real hackers chat on open, distributed platforms. Most technical discussion can be found on the Freenode IRC network. It&amp;rsquo;s not perfect, but the advantages clearly outweigh the drawbacks.
+Recently, I needed to join an existing large &amp;ldquo;community&amp;rdquo; on the centralized, proprietary walled garden that is the Slack network.
+The Problem:
+Connecting to the the Slack server requires that you use either the proprietary client or their proprietary web app.</description>
+    </item>
     
     <item>
       <title>A new sync primitive in golang</title>

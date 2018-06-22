@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://purpleidea.com/blog/2018/06/18/breaking-out-of-the-slack-walled-garden/</loc>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/blog/2018/05/20/a-new-sync-primitive-in-golang/</loc>
     <lastmod>2018-05-20T18:00:00-04:00</lastmod>
   </url>
@@ -1642,7 +1647,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/devops/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1897,7 +1902,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/fedora/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2329,7 +2334,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/golang/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2665,13 +2670,13 @@
   
   <url>
     <loc>https://purpleidea.com/tags/irc/</loc>
-    <lastmod>2013-10-18T06:00:49+00:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://purpleidea.com/tags/irssi/</loc>
-    <lastmod>2013-10-18T06:00:49+00:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2954,6 +2959,12 @@
   <url>
     <loc>https://purpleidea.com/tags/matlab/</loc>
     <lastmod>2013-06-04T02:46:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/tags/matterircd/</loc>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3429,13 +3440,13 @@
   
   <url>
     <loc>https://purpleidea.com/tags/planetdevops/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://purpleidea.com/tags/planetfedora/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4127,6 +4138,12 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/tags/slack/</loc>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/tags/slashdot/</loc>
     <lastmod>2012-10-20T03:02:22+00:00</lastmod>
     <priority>0</priority>
@@ -4378,7 +4395,7 @@
   
   <url>
     <loc>https://purpleidea.com/categories/technical/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4438,7 +4455,7 @@
   
   <url>
     <loc>https://purpleidea.com/blog/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
   </url>
   
   <url>
@@ -4759,7 +4776,7 @@
   
   <url>
     <loc>https://purpleidea.com/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2018-06-22T13:50:00-04:00</lastmod>
   </url>
   
   <url>
