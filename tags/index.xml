@@ -183,6 +183,15 @@
     </item>
     
     <item>
+      <title>Ansi Escape Codes</title>
+      <link>https://purpleidea.com/tags/ansi-escape-codes/</link>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/tags/ansi-escape-codes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ansible</title>
       <link>https://purpleidea.com/tags/ansible/</link>
       <pubDate>Wed, 30 Nov 2016 23:59:49 +0000</pubDate>
@@ -365,7 +374,7 @@
     <item>
       <title>Bash</title>
       <link>https://purpleidea.com/tags/bash/</link>
-      <pubDate>Sat, 10 Mar 2018 02:00:00 -0500</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/bash/</guid>
       <description></description>
@@ -1103,7 +1112,7 @@
     <item>
       <title>Devops</title>
       <link>https://purpleidea.com/tags/devops/</link>
-      <pubDate>Fri, 22 Jun 2018 13:50:00 -0400</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/devops/</guid>
       <description></description>
@@ -1481,7 +1490,7 @@
     <item>
       <title>Fedora</title>
       <link>https://purpleidea.com/tags/fedora/</link>
-      <pubDate>Fri, 22 Jun 2018 13:50:00 -0400</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/fedora/</guid>
       <description></description>
@@ -2003,7 +2012,7 @@
     <item>
       <title>Gnome</title>
       <link>https://purpleidea.com/tags/gnome/</link>
-      <pubDate>Tue, 17 Oct 2017 21:22:05 +0000</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/gnome/</guid>
       <description></description>
@@ -2483,6 +2492,15 @@
       <pubDate>Thu, 24 Jul 2014 00:41:08 +0000</pubDate>
       
       <guid>https://purpleidea.com/tags/hybrid-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyperlink</title>
+      <link>https://purpleidea.com/tags/hyperlink/</link>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/tags/hyperlink/</guid>
       <description></description>
     </item>
     
@@ -3767,7 +3785,7 @@
     <item>
       <title>Planetdevops</title>
       <link>https://purpleidea.com/tags/planetdevops/</link>
-      <pubDate>Fri, 22 Jun 2018 13:50:00 -0400</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/planetdevops/</guid>
       <description></description>
@@ -3776,7 +3794,7 @@
     <item>
       <title>Planetfedora</title>
       <link>https://purpleidea.com/tags/planetfedora/</link>
-      <pubDate>Fri, 22 Jun 2018 13:50:00 -0400</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/planetfedora/</guid>
       <description></description>
@@ -3974,7 +3992,7 @@
     <item>
       <title>Ps1</title>
       <link>https://purpleidea.com/tags/ps1/</link>
-      <pubDate>Mon, 27 Jul 2015 11:39:45 +0000</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/ps1/</guid>
       <description></description>
@@ -5207,7 +5225,7 @@
     <item>
       <title>Terminal</title>
       <link>https://purpleidea.com/tags/terminal/</link>
-      <pubDate>Fri, 22 Mar 2013 23:34:59 +0000</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
       <guid>https://purpleidea.com/tags/terminal/</guid>
       <description></description>
@@ -5687,6 +5705,15 @@
       <pubDate>Wed, 08 Jul 2015 01:14:19 +0000</pubDate>
       
       <guid>https://purpleidea.com/tags/vsftp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vte</title>
+      <link>https://purpleidea.com/tags/vte/</link>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/tags/vte/</guid>
       <description></description>
     </item>
     

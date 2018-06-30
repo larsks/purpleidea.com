@@ -6,19 +6,22 @@
     <description>Recent content in Ps1 on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Mon, 27 Jul 2015 11:39:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jun 2018 21:45:00 -0400</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/tags/ps1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Golang parallelism issues causing “too many open files” error</title>
-      <link>https://purpleidea.com/blog/2015/07/27/golang-parallelism-issues-causing-too-many-open-files-error/</link>
-      <pubDate>Mon, 27 Jul 2015 11:39:45 +0000</pubDate>
+      <title>Hyperlinks in GNOME terminal</title>
+      <link>https://purpleidea.com/blog/2018/06/29/hyperlinks-in-gnome-terminal/</link>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
       
-      <guid>https://purpleidea.com/blog/2015/07/27/golang-parallelism-issues-causing-too-many-open-files-error/</guid>
-      <description>I&amp;rsquo;ve been hacking in golang for a while, but I&amp;rsquo;ll admit that I didn&amp;rsquo;t get too deep into some of the language nuances until more recently. Since some of them have started to bite me, here&amp;rsquo;s a little post-mortem of one of the problems I was having.
-After hacking and testing code all day, I made a seemingly innocuous change, and when running my program, I saw the following error:</description>
+      <guid>https://purpleidea.com/blog/2018/06/29/hyperlinks-in-gnome-terminal/</guid>
+      <description>Over the years I&amp;rsquo;ve learned about many of the advantages of using a modern terminal and shell. I&amp;rsquo;m talking about using bash with GNOME terminal on a modern GNU/Linux distribution.
+I particularly like switching between the terminal and GUI applications. It&amp;rsquo;s now even better.
+Automatic Hyperlinks:
+Occasionally, some program running in your shell might output what looked like a link:
+ gnome terminal and vte will automatically add links to text that looks like a web hyperlink or an email addressThey can be seen when you hover over them, and a right-click will display a useful context menu:</description>
     </item>
     
     <item>

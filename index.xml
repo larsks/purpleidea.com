@@ -6,10 +6,23 @@
     <description>Recent content in Welcome to purpleidea.com on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Fri, 22 Jun 2018 13:50:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jun 2018 21:45:00 -0400</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hyperlinks in GNOME terminal</title>
+      <link>https://purpleidea.com/blog/2018/06/29/hyperlinks-in-gnome-terminal/</link>
+      <pubDate>Fri, 29 Jun 2018 21:45:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2018/06/29/hyperlinks-in-gnome-terminal/</guid>
+      <description>Over the years I&amp;rsquo;ve learned about many of the advantages of using a modern terminal and shell. I&amp;rsquo;m talking about using bash with GNOME terminal on a modern GNU/Linux distribution.
+I particularly like switching between the terminal and GUI applications. It&amp;rsquo;s now even better.
+Automatic Hyperlinks:
+Occasionally, some program running in your shell might output what looked like a link:
+ gnome terminal and vte will automatically add links to text that looks like a web hyperlink or an email addressThey can be seen when you hover over them, and a right-click will display a useful context menu:</description>
+    </item>
     
     <item>
       <title>Breaking out of the Slack walled garden</title>
