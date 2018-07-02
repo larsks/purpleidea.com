@@ -171,6 +171,8 @@ Date: Tue Mar 14 09:26:53 2015 -0400
 	<form class="post-new-comment" method="POST" action="https://api.staticman.net/v2/entry/purpleidea/purpleidea.com/master/comments">
 		<input type="hidden" name="options[redirect]" value="https://purpleidea.com/blog/2015/03/16/fancy-git-aliases-and-git-cherryfetch/#comment-submitted">
 		<input type="hidden" name="options[entryId]" value="blog/2015/03/16/fancy-git-aliases-and-git-cherryfetch">
+		<input type="hidden" name="options[reCaptcha][siteKey]" value="6Lc0u2EUAAAAAImKX7XafINIzeoLZFQCGFKF7qCp">
+		<input type="hidden" name="options[reCaptcha][secret]" value="AEl4ul2uMOx2EL2LMm/84zzh8mWLYIYW&#43;v2EEu7webGOtAqyQiLBa6QLjPgnlyNjJxE3UeccxuBQIWqPzG96FsVl0AVTihhHt3OGR1hteAZUAhoJjnH&#43;7PoyC3x7d4KDLypopDn&#43;HzWowOpAZuvfHE08n&#43;G4omrP5fUfkOrH03A=">
 		<div class="col-md-9">
 			<div class="row">
 				<textarea name="fields[message]" style="width: 80%; height: 50px;" class="post-comment-field" placeholder="Please enter your comment here..." rows="10"></textarea><br />
@@ -183,6 +185,12 @@ Date: Tue Mar 14 09:26:53 2015 -0400
 			</div>
 			<div class="row">
 				<input name="fields[url]" type="text" style="width: 50%;" class="post-comment-field" placeholder="Your website">
+			</div>
+			<div class="row">
+				<br />
+				<div class="g-recaptcha" data-sitekey="6Lc0u2EUAAAAAImKX7XafINIzeoLZFQCGFKF7qCp"></div>
+				<script src='https://www.google.com/recaptcha/api.js'></script>
+				(sorry but the spammers were getting too crazy!)
 			</div>
 			<div class="row">
 				<input type="submit" style="width: 80%;" class="post-comment-field btn btn-primary btn-xs" value="Submit">
