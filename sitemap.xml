@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://purpleidea.com/blog/2018/10/30/the-end-of-a-red-giant/</loc>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/blog/2018/06/29/hyperlinks-in-gnome-terminal/</loc>
     <lastmod>2018-06-29T21:45:00-04:00</lastmod>
   </url>
@@ -1020,6 +1025,12 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/tags/alv2/</loc>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/tags/anaconda/</loc>
     <lastmod>2013-03-14T00:34:19+00:00</lastmod>
     <priority>0</priority>
@@ -1496,7 +1507,13 @@
   
   <url>
     <loc>https://purpleidea.com/tags/copyleft/</loc>
-    <lastmod>2017-10-17T21:22:05+00:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/tags/copyright/</loc>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1546,6 +1563,10 @@
     <loc>https://purpleidea.com/tags/cumulusnetworks/</loc>
     <lastmod>2014-11-04T02:23:52+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/misc/dj/</loc>
   </url>
   
   <url>
@@ -2068,6 +2089,12 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/tags/fsf/</loc>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/tags/fsm/</loc>
     <lastmod>2013-11-05T15:00:19+00:00</lastmod>
     <priority>0</priority>
@@ -2393,7 +2420,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/gpl/</loc>
-    <lastmod>2017-10-17T21:22:05+00:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2586,6 +2613,12 @@
   <url>
     <loc>https://purpleidea.com/tags/hyperlink/</loc>
     <lastmod>2018-06-29T21:45:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/tags/ibm/</loc>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2831,7 +2864,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/legal/</loc>
-    <lastmod>2017-10-17T21:22:05+00:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3241,7 +3274,7 @@
   
   <url>
     <loc>https://purpleidea.com/categories/non-technical/</loc>
-    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3467,7 +3500,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/planetfedora/</loc>
-    <lastmod>2018-06-29T21:45:00-04:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3863,7 +3896,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/redhat/</loc>
-    <lastmod>2018-04-04T06:27:35-05:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4476,7 +4509,7 @@
   
   <url>
     <loc>https://purpleidea.com/blog/</loc>
-    <lastmod>2018-06-29T21:45:00-04:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
   </url>
   
   <url>
@@ -4803,7 +4836,7 @@
   
   <url>
     <loc>https://purpleidea.com/</loc>
-    <lastmod>2018-06-29T21:45:00-04:00</lastmod>
+    <lastmod>2018-10-30T08:39:00-04:00</lastmod>
   </url>
   
   <url>

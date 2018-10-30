@@ -6,10 +6,24 @@
     <description>Recent content in Redhat on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Wed, 04 Apr 2018 06:27:35 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 08:39:00 -0400</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/tags/redhat/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The End of a Red Giant</title>
+      <link>https://purpleidea.com/blog/2018/10/30/the-end-of-a-red-giant/</link>
+      <pubDate>Tue, 30 Oct 2018 08:39:00 -0400</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2018/10/30/the-end-of-a-red-giant/</guid>
+      <description>As I&amp;rsquo;m sure you&amp;rsquo;ve now heard, Red Hat is being acquired by IBM.
+Reactions have ranged from:
+ The first two emotions everyone experienced.to:
+ The classic humourous response.to:
+ The classy response.to:
+ The thing we&amp;#39;re all curious about.to everything in between. If someone were to leak me a copy of the memo-list 2018-October.txt.gz mailman archive, I&amp;rsquo;d sure love to see that! (Of course I&amp;rsquo;m joking and I wouldn&amp;rsquo;t actually ask anyone to do this.</description>
+    </item>
     
     <item>
       <title>Leaving Red Hat</title>

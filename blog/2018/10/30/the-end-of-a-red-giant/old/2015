@@ -1,0 +1,36 @@
+ Development and licensing of Red Hat’s open source offerings
+
+The open source software development model allows us to use the collective input, resources and knowledge of a global community of contributors who collaborate to develop, maintain and enhance software. We develop our offerings by working with open source development communities, often in a leadership role. Red Hat sponsors a number of open source communities, including the Ceph community project, the Fedora Project, GlusterFS, the JBoss community projects and OpenShift Origin. We are also an active contributor in other communities such as Linux Kernel, OpenStack and Project Kubernetes. Our role helps us to benefit from the efforts of these communities, which we believe enhances acceptance and support of our offerings and technologies. Additionally, the open and transparent nature of these communities provides our customers and potential customers with access and insights into, and the ability to influence, the future direction of our offerings.
+
+Under the open source licensing model, a software developer distributes the software under an open source license, such as the GNU General Public License (“GPL”) or GNU Lesser General Public License. Open source licenses provide relatively broad rights for recipients of the software to use, copy, modify and redistribute the software. These rights afford significant latitude for recipients to inspect, suggest changes, customize or enhance the software.
+
+The open source model provides an inherent level of transparency and choice that contrasts with the proprietary software model. Under the proprietary software model, a software vendor generally develops the software itself or acquires components from other vendors, without the input from a wider community of participants. The vendor generally licenses to the user only the machine-readable binary (or object) code version of the software, with no or limited rights to copy, modify or redistribute the software, and does not make the underlying source code available to the user or other developers. Moreover, peer review and collaborative enhancements are more difficult because of the lack of access to the source code.
+
+The scale and efficiency of open source software development has greatly increased through the availability of collaborative technologies and cloud-based tools, such as email lists, websites and code repositories. These technologies have enabled a global community of developers to collaborate on more complex open source projects, many of which are commercially funded.
+
+We believe that open source software is a viable and arguably superior alternative to traditional proprietary software. Open source software, as compared to proprietary software, offers a number of benefits to customers, including:
+
+ 
+  	Ÿ 	  	
+
+enabling a customer’s in-house development team to collaborate and innovate with a global community of independent developers and testers;
+
+ 
+  	Ÿ 	  	
+
+providing a customer’s in-house development team access to both binary and source code, and broader rights to copy, modify and redistribute the software;
+
+ 
+  	Ÿ 	  	
+
+offering a customer greater flexibility through open rather than proprietary protocols and formats;
+
+ 
+  	Ÿ 	  	
+
+permitting a customer ongoing access to improvements made to the software that are distributed by others; and
+
+ 
+  	Ÿ 	  	
+
+allowing a customer to inspect and help diagnose problems more easily and customize the software to suit its particular needs. 
