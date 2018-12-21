@@ -1,0 +1,351 @@
+
+r WRDTR,CLKTR: 0x8200083f 0x40000000 
+r RQDC ,RFDC : 0x80000031 0x00000216 
+
+using  eeprom values
+
+WRDTR,CLKTR: 0x8200083f 0x40000000 
+RQDC ,RFDC : 0x80000031 0x00000216 
+
+using MCNG ddr static values from serial eeprom
+ddr init done
+
+Running Normal Memtest...
+Passed.
+IOS Bootloader - Starting system.
+FLASH CHIP:  Numonyx P33
+Checking for Over Erased blocks
+......................................................................................................................................................................................................................................................
+Xmodem file system is available.
+
+DDR values used from system serial eeprom.
+WRDTR,CLKTR: 0x8200083f, 0x40000000
+RQDC, RFDC : 0x80000031, 0x00000216
+
+PCIE0: link is up.
+PCIE0: VC0 is active
+PCIE1: link is up.
+PCIE1: VC0 is active
+64bit PCIE devices
+PCIEx: initialization done
+flashfs[0]: 78 files, 15 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 31739904
+flashfs[0]: Bytes used: 24312832
+flashfs[0]: Bytes available: 7427072
+flashfs[0]: flashfs fsck took 17 seconds.
+Reading cookie from system serial eeprom...Done
+Base Ethernet MAC address: 44:d3:ca:b0:91:82
+Ethernet speed is 1000 Mb - FULL duplex
+Unable to get our ip address: no "IP_ADDR" variable set
+
+The system has encountered an error initializing the
+TFTP file system. The system is ignoring the error and
+continuing to boot. If you abort the boot process,
+the following commands will set IP_ADDR, DEFAULT_ROUTER
+and NETMASK environment variables, initialize the tftp
+system, and load the operating system software:
+
+    set IP_ADDR
+    set DEFAULT_ROUTER
+    set NETMASK
+    tftp_init
+    boot
+
+Loading "flash:/ap3g1-rcvk9w8-mx/ap3g1-rcvk9w8-mx"...###########################################################################################################################################################################################################################
+
+File "flash:/ap3g1-rcvk9w8-mx/ap3g1-rcvk9w8-mx" uncompressed and installed, entry point: 0x4000
+executing...
+enet halted
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, C3500 Software (AP3G1-RCVK9W8-M), Version 12.4(23c)JA2, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2011 by Cisco Systems, Inc.
+Compiled Wed 13-Apr-11 12:24 by prod_rel_team
+
+
+Proceeding with system init
+
+Proceeding to unmask interrupts
+Initializing flashfs...
+FLASH CHIP:  Numonyx P33
+Checking for Over Erased blocks
+......................................................................................................................................................................................................................................................
+
+flashfs[1]: WARNING - Unable to allocate backup blocks.
+Please free some space on the flash file system.
+flashfs[1]: 78 files, 15 directories
+flashfs[1]: 0 orphaned files, 0 orphaned directories
+flashfs[1]: Total bytes: 31739904
+flashfs[1]: Bytes used: 24312832
+flashfs[1]: Bytes available: 7427072
+flashfs[1]: flashfs fsck took 12 seconds.
+flashfs[1]: Initialization complete.
+flashfs[2]: 0 files, 1 directories
+flashfs[2]: 0 orphaned files, 0 orphaned directories
+flashfs[2]: Total bytes: 11999232
+flashfs[2]: Bytes used: 1024
+flashfs[2]: Bytes available: 11998208
+flashfs[2]: flashfs fsck took 0 seconds.
+flashfs[2]: Initialization complete....done Initializing flashfs.
+
+Ethernet speed is 1000 Mb - FULL duplex
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco AIR-CAP3502E-A-K9    (PowerPC460exr) processor (revision A0) with 81910K/49152K bytes of memory.
+Processor board ID FGL1534S2XZ
+PowerPC460exr CPU at 666Mhz, revision number 0x18A8
+Last reset from power-on
+LWAPP image version 7.0.112.74
+1 Gigabit Ethernet interface
+
+32K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address: 44:D3:CA:B0:91:82
+Part Number                          : 73-12175-05
+PCA Assembly Number                  : 800-32268-05
+PCA Revision Number                  : A0
+PCB Serial Number                    : FOC15277NX9
+Top Assembly Part Number             : 800-32904-01
+Top Assembly Serial Number           : FGL1534S2XZ
+Top Revision Number                  : A0
+Product/Model Number                 : AIR-CAP3502E-A-K9   
+% Please define a domain-name first.
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:14.070: *** CRASH_LOG = YES
+Base Ethernet MAC address: 44:D3:CA:B0:91:82
+
+*Mar  1 00:00:14.426: %LWAPP-3-CLIENTEVENTLOG: Read and initialized AP event log (contains, 1024 messages)
+
+*Mar  1 00:00:16.455: %LINK-3-UPDOWN: Interface GigabitEthernet0, changed state to up
+*Mar  1 00:00:16.477: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C3500 Software (AP3G1-RCVK9W8-M), Version 12.4(23c)JA2, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2011 by Cisco Systems, Inc.
+Compiled Wed 13-Apr-11 12:24 by prod_rel_team
+*Mar  1 00:00:16.493: %CAPWAP-5-CHANGED: CAPWAP changed state to DISCOVERY
+*Mar  1 00:00:17.455: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0, changed state to up
+*Mar  1 00:00:27.553: %DHCP-6-ADDRESS_ASSIGN: Interface GigabitEthernet0 assigned DHCP address 192.168.101.140, mask 255.255.255.0, hostname AP44d3.cab0.9182
+
+AP44d3.cab0.9182>
+Translating "CISCO-CAPWAP-CONTROLLER"...domain server (192.168.101.1)
+
+
+
+XXXXXXXXXXXXXXXXXXxx
+
+
+r WRDTR,CLKTR: 0x8200083f 0x40000000 
+r RQDC ,RFDC : 0x80000031 0x00000216 
+
+using  eeprom values
+
+WRDTR,CLKTR: 0x8200083f 0x40000000 
+RQDC ,RFDC : 0x80000031 0x00000216 
+
+using MCNG ddr static values from serial eeprom
+ddr init done
+
+Running Normal Memtest...
+Passed.
+IOS Bootloader - Starting system.
+FLASH CHIP:  Numonyx P33
+Checking for Over Erased blocks
+......................................................................................................................................................................................................................................................
+Xmodem file system is available.
+
+DDR values used from system serial eeprom.
+WRDTR,CLKTR: 0x8200083f, 0x40000000
+RQDC, RFDC : 0x80000031, 0x00000216
+
+PCIE0: link is up.
+PCIE0: VC0 is active
+PCIE1: link is up.
+PCIE1: VC0 is active
+64bit PCIE devices
+PCIEx: initialization done
+flashfs[0]: 209 files, 7 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 31739904
+flashfs[0]: Bytes used: 10732544
+flashfs[0]: Bytes available: 21007360
+flashfs[0]: flashfs fsck took 10 seconds.
+Reading cookie from system serial eeprom...Done
+Base Ethernet MAC address: 44:d3:ca:b0:91:82
+Ethernet speed is 1000 Mb - FULL duplex
+Loading "flash:/ap3g1-k9w7-mx.153-3.JF5/ap3g1-k9w7-mx.153-3.JF5"...###############
+
+File "flash:/ap3g1-k9w7-mx.153-3.JF5/ap3g1-k9w7-mx.153-3.JF5" uncompressed and installed, entry point: 0x4000
+executing...
+enet halted
+
+IOS Secondary Bootloader - Starting system.
+FLASH CHIP:  Numonyx P33
+Checking for Over Erased blocks
+......................................................................................................................................................................................................................................................
+Xmodem file system is available.
+
+DDR values used from system serial eeprom.
+WRDTR,CLKTR: 0x8200083f, 0x40000000
+RQDC, RFDC : 0x80000031, 0x00000216
+
+PCIE0: link is up.
+PCIE0: VC0 is active
+PCIE1: link is up.
+PCIE1: VC0 is active
+Radio 0 : Vendor 0x11AB, Device 0x8350
+
+64bit PCIE devices
+Radio 1 : Vendor 0x11AB, Device 0x8324
+
+PCIEx: initialization done
+flashfs[0]: 209 files, 7 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 31739904
+flashfs[0]: Bytes used: 10732544
+flashfs[0]: Bytes available: 21007360
+flashfs[0]: flashfs fsck took 10 seconds.
+Reading cookie from system serial eeprom...Done
+Base Ethernet MAC address: 44:d3:ca:b0:91:82
+Creating Test Kernel diagnostic commands
+
+Radio 0 : Vendor 0x11AB, Device 0x8324
+
+Radio 1 : Vendor 0x11AB, Device 0x8350
+
+Radio 2 : Vendor 0x9421, Device 0xFFE8
+
+Radio 3 : Vendor 0x3D20, Device 0x5B
+******** AUTOMATIC DDR CALIBRATION UPGRADE LOGIC *********
+=== 1. Is original FCS bootloader in BS:?  If not, skip upgrade ===
+    ---> original FCS bootloader not detected -- skip upgrade
+Boot CMD: 'boot  flash:/ap3g1-k9w7-mx.153-3.JF5/ap3g1-k9w7-xx.153-3.JF5;flash:/ap3g1-k9w7-mx.153-3.JF5/ap3g1-k9w7-xx.153-3.JF5'
+Loading "flash:/ap3g1-k9w7-mx.153-3.JF5/ap3g1-k9w7-xx.153-3.JF5"...####################################
+File "flash:/ap3g1-k9w7-mx.153-3.JF5/ap3g1-k9w7-xx.153-3.JF5" uncompressed and installed, entry point: 0x100000
+executing...
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, C3500 Software (AP3G1-K9W7-M), Version 15.3(3)JF5, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2018 by Cisco Systems, Inc.
+Compiled Mon 29-Jan-18 22:44 by prod_rel_team
+
+Initializing flashfs...
+FLASH CHIP:  Numonyx P33
+Checking for Over Erased blocks
+......................................................................................................................................................................................................................................................
+
+flashfs[2]: 209 files, 7 directories
+flashfs[2]: 0 orphaned files, 0 orphaned directories
+flashfs[2]: Total bytes: 31481856
+flashfs[2]: Bytes used: 10732544
+flashfs[2]: Bytes available: 20749312
+flashfs[2]: flashfs fsck took 10 seconds.
+flashfs[2]: Initialization complete.
+flashfs[4]: 0 files, 1 directories
+flashfs[4]: 0 orphaned files, 0 orphaned directories
+flashfs[4]: Total bytes: 11999232
+flashfs[4]: Bytes used: 1024
+flashfs[4]: Bytes available: 11998208
+flashfs[4]: flashfs fsck took 1 seconds.
+flashfs[4]: Initialization complete.
+Copying radio files from flash: to ram:
+Copy in progress...CCC
+Copy in progress...CCC
+Copy in progress...CC
+Uncompressing radio files...
+...done Initializing flashfs.
+
+Radio0  present 8364B 8000 B8020000 0 B8030000 10
+Rate table has 300 entries (16 legacy/64 11n/220 11ac)
+
+POWER TABLE FILENAME = ram:/D2.bin
+
+Radio1  present 8364B 8000 B0020000 0 B0030000 C
+POWER TABLE FILENAME = ram:/D5.bin
+
+Ethernet speed is 1000 Mb - FULL duplex
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco AIR-SAP3502E-A-K9 (PowerPC460exr) processor (revision A0) with 98294K/32768K bytes of memory.
+Processor board ID FGL1534S2XZ
+PowerPC460exr CPU at 666Mhz, revision number 0x18A8
+Last reset from reload
+1 Gigabit Ethernet interface
+2 802.11 Radios
+
+32K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address: 44:D3:CA:B0:91:82
+Part Number                          : 73-12175-05
+PCB Serial Number                    : FOC15277NX9
+Top Assembly Part Number             : 800-32904-01
+Top Assembly Serial Number           : FGL1534S2XZ
+Top Revision Number                  : A0
+Product/Model Number                 : AIR-CAP3502E-A-K9   
+
+
+
+Press RETURN to get started!
+
+
+
