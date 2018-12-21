@@ -129,7 +129,7 @@ It installed effortlessly from the identically-named Fedora package.</p>
 <span style="color:#f92672">[</span><span style="color:#ae81ff">361353</span>.942955<span style="color:#f92672">]</span> usb <span style="color:#ae81ff">2</span>-1.2: pl2303 converter now attached to ttyUSB0</code></pre></div>
 <p>Plug everything in, and once <code>dmesg</code> tells you what port it&rsquo;s on, connect away:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ sudo picocom /dev/ttyUSB0
-<span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> james: 
+<span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> james:
 picocom v3.1
 
 port is        : /dev/ttyUSB0
@@ -146,8 +146,8 @@ hangup is      : no
 nolock is      : no
 send_cmd is    : sz -vv
 receive_cmd is : rz -vv -E
-imap is        : 
-omap is        : 
+imap is        :
+omap is        :
 emap is        : crcrlf,delbs,
 logfile is     : none
 initstring     : none
@@ -265,13 +265,13 @@ sure that you allow incoming requests on UDP port 69 for this to work.</p>
 <p>If your device is already on, hold down the &ldquo;mode&rdquo; button and reset it by
 disconnecting the power. Keep holding the &ldquo;mode&rdquo; button while you reconnect it.
 Your serial console might look something similar to this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">r WRDTR,CLKTR: 0x8200083f 0x40000000 
-r RQDC ,RFDC : 0x80000031 0x00000216 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">r WRDTR,CLKTR: 0x8200083f 0x40000000
+r RQDC ,RFDC : 0x80000031 0x00000216
 
 using  eeprom values
 
-WRDTR,CLKTR: 0x8200083f 0x40000000 
-RQDC ,RFDC : 0x80000031 0x00000216 
+WRDTR,CLKTR: 0x8200083f 0x40000000
+RQDC ,RFDC : 0x80000031 0x00000216
 
 using MCNG ddr static values from serial eeprom
 ddr init done
@@ -312,7 +312,7 @@ image_recovery: Download default IOS tar image tftp://255.255.255.255/ap3g1-k9w7
 
 examining image...
 %Error opening tftp://255.255.255.255/ap3g1-k9w7-tar.default (connection timed out)
-ap: </code></pre></div>
+ap:</code></pre></div>
 <p>It then seems to try and boot from a default TFTP server, which fails because
 there isn&rsquo;t one running there. I then ran: <code>dir flash</code> (Note the trailing
 colon.) The <code>ap:</code> text is the prompt&rsquo;s <strong><code>$PS1</code></strong>.</p>
@@ -362,12 +362,12 @@ need to type the magic commands: <code>debug capwap console cli</code> and then:
 <code>debug capwap client no-reload</code>. We can also get rid of most of the logging
 with: <code>conf t</code>, then <code>no logging console</code>, then <code>end</code>. This all looks like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">APxyz&gt;enable
-Password: 
+Password:
 APxyz#
 APxyz#debug capwap console cli
-This command is meant only for debugging/troubleshooting 
+This command is meant only for debugging/troubleshooting
 Any configuration change may result in different
-behavior from centralized configuration. 
+behavior from centralized configuration.
 
 CAPWAP console CLI allow/disallow debugging is on
 APxyz#debug capwap client no-reload
@@ -655,7 +655,7 @@ Requested system reload in progress...
 archive download: takes 227 seconds</code></pre></div>
 <p>In the terminal running the TFTP server, it now looks like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ sudo ./tftp-server -port <span style="color:#ae81ff">69</span>
-<span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> james: 
+<span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> james:
 <span style="color:#ae81ff">04</span>:39:10 New Connection!
 <span style="color:#ae81ff">04</span>:39:10 Handle Client!
 <span style="color:#ae81ff">04</span>:39:10 Read Request: ap3g1-k9w7-tar.153-3.JF5.tar
@@ -736,14 +736,14 @@ dot11 pause-time 100
 dot11 syslog
 !
 dot11 ssid ciscosucks-far
-   authentication open 
+   authentication open
    authentication key-management wpa version 2
    guest-mode
    mbssid guest-mode
    wpa-psk ascii 7 XXX
 !
 dot11 ssid ciscosucks-fast
-   authentication open 
+   authentication open
    authentication key-management wpa version 2
    guest-mode
    mbssid guest-mode
@@ -765,7 +765,7 @@ bridge irb
 interface Dot11Radio0
  no ip address
  !
- encryption mode ciphers aes-ccm 
+ encryption mode ciphers aes-ccm
  !
  ssid ciscosucks-far
  !
@@ -781,7 +781,7 @@ interface Dot11Radio0
 interface Dot11Radio1
  no ip address
  !
- encryption mode ciphers aes-ccm 
+ encryption mode ciphers aes-ccm
  !
  ssid ciscosucks-fast
  !
