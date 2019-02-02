@@ -6,10 +6,21 @@
     <description>Recent content in Welcome to purpleidea.com on purpleidea.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Fri, 21 Dec 2018 07:45:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 03:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://purpleidea.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upcoming Speaking and Events</title>
+      <link>https://purpleidea.com/blog/2019/02/02/upcoming-speaking-and-events/</link>
+      <pubDate>Sat, 02 Feb 2019 03:00:00 -0500</pubDate>
+      
+      <guid>https://purpleidea.com/blog/2019/02/02/upcoming-speaking-and-events/</guid>
+      <description>mgmt @ FOSDEM:
+Later today I&amp;rsquo;m giving four talks about mgmt at FOSDEM. I&amp;rsquo;m also giving two more on the following day. (One is a 5 min lightning talk.) I don&amp;rsquo;t know how I got accepted for so many talks, I just replied to the CFP for every room where I thought I had something interesting to share, and well, here we are!
+I got rejected for the main track again, but I guess it&amp;rsquo;s up to me to make my work more generally appealing first.</description>
+    </item>
     
     <item>
       <title>A guide to fighting with a Cisco access point</title>

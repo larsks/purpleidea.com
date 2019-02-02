@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://purpleidea.com/blog/2019/02/02/upcoming-speaking-and-events/</loc>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/blog/2018/12/21/a-guide-to-fighting-with-a-cisco-access-point/</loc>
     <lastmod>2018-12-21T07:45:00-05:00</lastmod>
   </url>
@@ -1078,6 +1083,12 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/tags/antwerp/</loc>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/tags/apt/</loc>
     <lastmod>2013-12-21T11:58:49+00:00</lastmod>
     <priority>0</priority>
@@ -1220,6 +1231,12 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/tags/belgium/</loc>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/tags/binary-prefix/</loc>
     <lastmod>2009-11-16T13:14:15+00:00</lastmod>
     <priority>0</priority>
@@ -1276,6 +1293,12 @@
   <url>
     <loc>https://purpleidea.com/tags/boxes/</loc>
     <lastmod>2014-01-20T11:46:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/tags/brussels/</loc>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1376,7 +1399,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/cfgmgmtcamp/</loc>
-    <lastmod>2017-01-06T05:57:08+00:00</lastmod>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2107,7 +2130,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/fosdem/</loc>
-    <lastmod>2017-01-06T05:57:08+00:00</lastmod>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2192,6 +2215,12 @@
   <url>
     <loc>https://purpleidea.com/tags/gedit/</loc>
     <lastmod>2013-08-04T05:02:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://purpleidea.com/tags/gent/</loc>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3107,7 +3136,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/mgmtconfig/</loc>
-    <lastmod>2018-05-20T18:00:00-04:00</lastmod>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3470,6 +3499,12 @@
   </url>
   
   <url>
+    <loc>https://purpleidea.com/tags/paris/</loc>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://purpleidea.com/tags/password/</loc>
     <lastmod>2016-12-07T07:00:20+00:00</lastmod>
     <priority>0</priority>
@@ -3559,7 +3594,7 @@
   
   <url>
     <loc>https://purpleidea.com/tags/planetfedora/</loc>
-    <lastmod>2018-12-21T07:45:00-05:00</lastmod>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4526,7 +4561,7 @@
   
   <url>
     <loc>https://purpleidea.com/categories/technical/</loc>
-    <lastmod>2018-12-21T07:45:00-05:00</lastmod>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4586,7 +4621,7 @@
   
   <url>
     <loc>https://purpleidea.com/blog/</loc>
-    <lastmod>2018-12-21T07:45:00-05:00</lastmod>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -4913,7 +4948,7 @@
   
   <url>
     <loc>https://purpleidea.com/</loc>
-    <lastmod>2018-12-21T07:45:00-05:00</lastmod>
+    <lastmod>2019-02-02T03:00:00-05:00</lastmod>
   </url>
   
   <url>
